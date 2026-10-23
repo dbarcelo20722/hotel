@@ -10,9 +10,9 @@
             <p>Cliente</p>
             <div class="flex justify-center w-full">
                 <a class="p-4" href="/student008/hotel/db_files/db_customer_select">Select</a>
-                <a class="p-4" href="#">Insert</a>
-                <a class="p-4" href="#">Update</a>
-                <a class="p-4" href="#">Delete</a>
+                <a class="p-4" href="/student008/hotel/form_files/form_client_insert.php">Insert</a>
+                <a class="p-4" href="/student008/hotel/form_files/form_client_update.php">Update</a>
+                <a class="p-4" href="/student008/hotel/form_files/form_client_delete.php">Delete</a>
             </div>
             <p>Reservations</p>
         </footer>
