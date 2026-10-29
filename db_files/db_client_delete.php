@@ -3,7 +3,7 @@
 
     include __DIR__ . '/../db_connection.php';
 
-    $sql = "SELECT * FROM `008reservations` WHERE client_id = '$client_id'";
+    $sql = "SELECT * FROM `008client` WHERE client_id = '$client_id'";
     $result = mysqli_query($conn, $sql);
 ?>
 

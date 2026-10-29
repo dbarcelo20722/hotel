@@ -13,14 +13,14 @@
 <?php include __DIR__ . '/../templates/header.php'; ?>
 
 <section class="flex flex-row flex-wrap w-full">
-    <?php foreach ($hotel as $room): ?>
+    <?php foreach ($hotel as $reservation): ?>
         <div class="w-1/4 p-6">
-            <p>Id reserva: <?php echo $room["reservation_id"] ?></p>
-            <p>Id habitaion: <?php echo $room["room_id"] ?></p>
-            <p>Id cliente: <?= $room["client_id"] ?></p>
-            <p>Fecha de entrada: <?= $room["date_in"] ?></p>
-            <p>Fecha de salida: <?= $room["date_out"] ?></p>
-            <p>Precio por dia: <?= $room["price_per_day"] ?></p>
+            <p>Id reserva: <?php echo $reservation["reservation_id"] ?></p>
+            <p>Id habitaion: <?php echo $reservation["room_id"] ?></p>
+            <p>Id cliente: <?= $reservation["client_id"] ?></p>
+            <p>Fecha de entrada: <?= $reservation["date_in"] ?></p>
+            <p>Fecha de salida: <?= $reservation["date_out"] ?></p>
+            <p>Precio por dia: <?= $reservation["price_per_day"] ?></p>
         </div>
     <?php endforeach; ?>
 </section>

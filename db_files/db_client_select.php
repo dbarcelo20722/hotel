@@ -13,13 +13,13 @@
 <?php include __DIR__ . '/../templates/header.php'; ?>
 
 <section class="flex flex-row flex-wrap w-full">
-    <?php foreach ($hotel as $room): ?>
+    <?php foreach ($hotel as $client): ?>
         <div class="w-1/4 p-6">
-            <p>Nombre: <?php echo $room["first_name"] ?></p>
-            <p>Apellidos: <?php echo $room["last_name"] ?></p>
-            <p>Email: <?= $room["email"] ?></p>
-            <p>Address: <?= $room["address"] ?></p>
-            <p>Fecha de primer inicio de sesion: <?= $room["date_in"] ?></p>
+            <p>Nombre: <?php echo $client["first_name"] ?></p>
+            <p>Apellidos: <?php echo $client["last_name"] ?></p>
+            <p>Email: <?= $client["email"] ?></p>
+            <p>Address: <?= $client["address"] ?></p>
+            <p>Fecha de primer inicio de sesion: <?= $client["date_in"] ?></p>
         </div>
     <?php endforeach; ?>
 </section>

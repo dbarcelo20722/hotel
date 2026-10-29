@@ -21,8 +21,7 @@
 
         <form action="/student008/hotel/db_files/db_client_delete.php" method="GET">
             <input type="hidden" name="client_id" value="<?= $client['client_id'] ?>">
-            <button type="submit" name="submit" value="submit"
-                    class="mt-4 bg-red-600 p-3 text-white">
+            <button type="submit" name="submit" value="submit" class="mt-4 bg-red-600 p-3 text-white">
                 Confirmar eliminación
             </button>
         </form>

@@ -19,7 +19,7 @@
                 <a class="p-4" href="/student008/hotel/db_files/db_reservations_select.php">Select</a>
                 <a class="p-4" href="#">Insert</a>
                 <a class="p-4" href="#">Update</a>
-                <a class="p-4" href="#">Delete</a>
+                <a class="p-4" href="/student008/hotel/form_files/form_reservation_delete.php">Delete</a>
             </div>
         </footer>
     </body>
