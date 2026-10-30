@@ -1,6 +1,7 @@
         <footer class="flex flex-col gap-10 bg-gray-200 p-6 text-center">
             <p>&copy; 2026 Hotel Boutique</p>
             <p>Contacto: info@hotel.com</p>
+        <?php if (isset($_SESSION["client_id"]) && $_SESSION["client_id"] === '1') : ?>
             <p>Hotel</p>
             <div class="flex justify-center w-full">
                 <a class="p-4" href="/student008/hotel/form_files/form_room_insert.php">Insert</a>
@@ -21,6 +22,7 @@
                 <a class="p-4" href="#">Update</a>
                 <a class="p-4" href="/student008/hotel/form_files/form_reservation_delete.php">Delete</a>
             </div>
+        <?php endif; ?>
         </footer>
     </body>
 </html>

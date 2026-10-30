@@ -16,13 +16,19 @@
 
 <section class="flex flex-row flex-wrap w-full">
     <?php foreach ($hotel as $room): ?>
-        <div class="w-1/4 p-6">
-            <img src="/student008/hotel/imgs/room.png" alt="room">
-            <p>Habitación: <?php echo $room["room_id"] ?></p>
-            <p>Precio: <?= $room["price"] ?> €</p>
-            <button>Reservar</button>
-        </div>
-    <?php endforeach; ?>
+    <form action="/student008/hotel/db_files/db_reservation_add.php" class="w-1/4 p-6" method="GET">
+
+        <img src="/student008/hotel/imgs/room.png" alt="room">
+        <p>Habitación: <?= $room["room_id"] ?></p>
+        <p>Precio: <?= $room["price"] ?> €</p>
+        <input type="hidden" name="room_id" value="<?= $room['room_id'] ?>">
+        <input type="hidden" name="price" value="<?= $room['price'] ?>">
+        <input type="hidden" name="date_in" value="<?= $date_in ?>">
+        <input type="hidden" name="date_out" value="<?= $date_out ?>">
+
+        <button type="submit">Reservar</button>
+    </form>
+<?php endforeach; ?>
 </section>
 
         
