@@ -1,6 +1,6 @@
 <?php
     include __DIR__ . '/../templates/header.php';
-    
+    echo '<section class="flex flex-col">';
     if(isset($_SESSION['client_id'])){
         $room_id = $_GET['room_id'];
         $date_in = $_GET['date_in'];
@@ -20,5 +20,9 @@
     }else{
         echo '<p>Inicia sesion antes de poder reservar</p>';
     }
+    echo '<a href="/student008/hotel/form_files/form_room_avaliability.php" class="bg-black p-2 text-white">
+        Volver
+    </a>';
+    echo '</section>'
     include __DIR__ . '/../templates/footer.php';
 ?>

@@ -28,6 +28,7 @@
             <a href="/student008/hotel/index.php">Inicio</a>
             <a href="/student008/hotel/db_files/db_room_select.php">Habitaciones</a>
             <a href="/student008/hotel/form_files/form_login.php">Log In</a>
+            <?php if( )?>
             <form method="GET">
                 <button name="logout" value="logout">Log Out</button>
             </form>

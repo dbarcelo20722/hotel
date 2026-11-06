@@ -1,6 +1,8 @@
 <?php
     $date_in = $_GET['date_in'];
     $date_out = $_GET['date_out'];
+    setcookie("date_in", $_GET['date_in'], time() + 86400, "/student008/hotel");
+    setcookie("date_out", $_GET['date_out'], time() + 86400, "/student008/hotel");
 
     include __DIR__ . '/../db_connection.php';
 
